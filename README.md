@@ -6,14 +6,15 @@
 
 
 1 Đặng Thị Diễm Quỳnh: Nhóm trưởng 
-   Công việc: Thiết kế các class trong `models/`, đăng nhập và phân quyền, xử lý đặt bàn không trùng giờ (`services/`), giao diện chính `app_main.py` 
-   Đóng góp:34%
+   -**Công việc**: Thiết kế các class trong `models/`, đăng nhập và phân quyền, xử lý đặt bàn không trùng giờ (`services/`), giao diện chính `app_main.py` 
+  - **Đóng góp**:34%
+   
 2  Nguyễn Diệu Thảo: Thành viên 
-  Công việc: Quản lý bàn thường/VIP, sơ đồ bàn kéo thả trên Canvas (`gui/canvas_ban.py`), TableWidget tự viết, thống kê tỷ lệ sử dụng bàn 
-  Đóng góp:33%
+  -**Công việc**: Quản lý bàn thường/VIP, sơ đồ bàn kéo thả trên Canvas (`gui/canvas_ban.py`), TableWidget tự viết, thống kê tỷ lệ sử dụng bàn 
+  -**Đóng góp**:33%
 3 Trần Bảo Quyên: Thành viên 
-  Công việc: Quản lý khách hàng và đặt món trước, kiểm tra SĐT/email/ngày bằng regex, đọc ghi và backup JSON, lấy dữ liệu thực đơn từ web/API 
-  Đóng góp:33%
+  -**Công việc**: Quản lý khách hàng và đặt món trước, kiểm tra SĐT/email/ngày bằng regex, đọc ghi và backup JSON, lấy dữ liệu thực đơn từ web/API 
+  -**Đóng góp**:33%
 
 ## Chức năng
 
@@ -35,6 +36,4 @@
 ├── app_main.py    # chạy chương trình
 └── README.md
 
-## Cách chạy
 
-python app_main.py
