@@ -4,7 +4,6 @@ from datetime import datetime
 from models.ban import Ban
 from models.khach_hang import KhachHang
 
-
 class PhieuDatBan:
     def __init__(self, ma_phieu, khach_hang: KhachHang, ban: Ban,
                  ngay_dat, gio_dat, ds_mon_dat=None):
