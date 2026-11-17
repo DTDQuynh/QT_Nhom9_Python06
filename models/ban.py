@@ -77,6 +77,16 @@ class Ban(ABC):
     def tinh_tien_coc(self):
         raise NotImplementedError
 
+    def to_dict(self):
+        return {
+            "loai_ban": self.__class__.__name__,
+            "ma_ban": self.ma_ban,
+            "so_ghe": self.so_ghe,
+            "trang_thai": self.trang_thai,
+            "don_gia_ban": self.don_gia_ban,
+            "tien_coc": self.tinh_tien_coc()
+        }
+
     def __str__(self):
         return (
             f"{self.__class__.__name__}(ma_ban={self.ma_ban}, "
@@ -116,3 +126,8 @@ class BanVIP(Ban):
 
     def tinh_tien_coc(self):
         return self.don_gia_ban * self.TY_LE_COC + self.phu_phi
+
+    def to_dict(self):
+        data = super().to_dict()
+        data["phu_phi"] = self.phu_phi
+        return data
