@@ -31,9 +31,13 @@ class NguoiDung:
 
     @vai_tro.setter
     def vai_tro(self, vai_tro):
-        if vai_tro not in ["Admin", "Lễ tân"]:
-            raise ValueError("Vai tro phai la Admin hoac Le tan")
+        if vai_tro not in ["Admin", "Lễ tân", "Quản lý"]:
+            raise ValueError("Vai tro phai la Admin, Le tan hoac Quan ly")
         self.__vai_tro = vai_tro
+
+    def is_admin(self):
+        return self.vai_tro == "Admin"
 
     def __str__(self):
         return f"{self.ten_dang_nhap} - {self.vai_tro}"
+
