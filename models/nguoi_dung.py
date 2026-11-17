@@ -23,7 +23,7 @@ class NguoiDung:
     def mat_khau(self, mat_khau):
         if not mat_khau or len(mat_khau) < 6:
             raise ValueError("Mat khau phai co it nhat 6 ky tu")
-        self.__mat_khau = mat_khau
+        self.__mat_khau = mat_khau 
 
     @property
     def vai_tro(self):
