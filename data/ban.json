@@ -1,1 +1,46 @@
-[]
+
+[
+    {
+        "loai_ban": "BanThuong",
+        "ma_ban": "B01",
+        "so_ghe": 4,
+        "trang_thai": "Trong",
+        "don_gia_ban": 500000,
+        "tien_coc": 50000.0
+    },
+    {
+        "loai_ban": "BanThuong",
+        "ma_ban": "B02",
+        "so_ghe": 6,
+        "trang_thai": "Trong",
+        "don_gia_ban": 700000,
+        "tien_coc": 70000.0
+    },
+    {
+        "loai_ban": "BanThuong",
+        "ma_ban": "B03",
+        "so_ghe": 4,
+        "trang_thai": "Da dat",
+        "don_gia_ban": 500000,
+        "tien_coc": 50000.0
+    },
+    {
+        "loai_ban": "BanVIP",
+        "ma_ban": "VIP01",
+        "so_ghe": 8,
+        "trang_thai": "Trong",
+        "don_gia_ban": 1500000,
+        "tien_coc": 500000.0,
+        "phu_phi": 200000
+    },
+    {
+        "loai_ban": "BanVIP",
+        "ma_ban": "VIP02",
+        "so_ghe": 10,
+        "trang_thai": "Da dat",
+        "don_gia_ban": 2000000,
+        "tien_coc": 700000.0,
+        "phu_phi": 300000
+    }
+]
+
