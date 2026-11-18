@@ -1,6 +1,5 @@
 
 import re
-
 class KhachHang:
     def __init__(self, ma_kh, ten_kh, sdt, email):
         self.ma_kh = ma_kh
@@ -8,26 +7,29 @@ class KhachHang:
         self.sdt = sdt
         self.email = email
 
+    # Kiem tra ma khach hang
     @property
     def ma_kh(self):
         return self.__ma_kh
 
     @ma_kh.setter
     def ma_kh(self, ma_kh):
-        if not ma_kh or not ma_kh.strip():
+        if not isinstance(ma_kh, str) or not ma_kh.strip():
             raise ValueError("Ma khach hang khong duoc rong")
         self.__ma_kh = ma_kh.strip()
 
+    # Kiem tra ten khach hang
     @property
     def ten_kh(self):
         return self.__ten_kh
 
     @ten_kh.setter
     def ten_kh(self, ten_kh):
-        if not ten_kh or not ten_kh.strip():
+        if not isinstance(ten_kh, str) or not ten_kh.strip():
             raise ValueError("Ten khach hang khong duoc rong")
         self.__ten_kh = ten_kh.strip()
 
+    # Kiem tra so dien thoai bang Regex
     @property
     def sdt(self):
         return self.__sdt
@@ -35,10 +37,15 @@ class KhachHang:
     @sdt.setter
     def sdt(self, sdt):
         sdt = str(sdt).strip()
+
         if not re.fullmatch(r"0\d{9}", sdt):
-            raise ValueError("SDT phai co 10 chu so va bat dau bang 0")
+            raise ValueError(
+                "SDT phai co 10 chu so va bat dau bang 0"
+            )
+
         self.__sdt = sdt
 
+    # Kiem tra email bang Regex
     @property
     def email(self):
         return self.__email
@@ -49,6 +56,7 @@ class KhachHang:
             raise ValueError("Email khong hop le")
 
         email = email.strip()
+
         mau_email = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
 
         if not re.fullmatch(mau_email, email):
@@ -56,6 +64,7 @@ class KhachHang:
 
         self.__email = email
 
+    # Chuyen doi doi tuong thanh Dictionary de luu JSON
     def to_dict(self):
         return {
             "ma_kh": self.ma_kh,
@@ -63,6 +72,12 @@ class KhachHang:
             "sdt": self.sdt,
             "email": self.email
         }
+
+    def __str__(self):
+        return (
+            f"{self.ma_kh} - {self.ten_kh} - "
+            f"{self.sdt} - {self.email}"
+        )
 
     def __str__(self):
         return f"{self.ma_kh} - {self.ten_kh} - {self.sdt} - {self.email}"
