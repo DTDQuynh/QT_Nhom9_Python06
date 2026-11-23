@@ -1,0 +1,26 @@
+[
+  {
+    "ma_kh": "KH01",
+    "ten_kh": "Nguyễn Minh Anh",
+    "sdt": "0901234567",
+    "email": "minhanh.nguyen@gmail.com"
+  },
+  {
+    "ma_kh": "KH02",
+    "ten_kh": "Trần Hoàng Nam",
+    "sdt": "0912345678",
+    "email": ""
+  },
+  {
+    "ma_kh": "KH03",
+    "ten_kh": "Lê Thị Thu Hà",
+    "sdt": "0987654321",
+    "email": "thuha.le1999@yahoo.com"
+  },
+  {
+    "ma_kh": "KH04",
+    "ten_kh": "Phạm Quốc Bảo",
+    "sdt": "0356789123",
+    "email": ""
+  }
+]
