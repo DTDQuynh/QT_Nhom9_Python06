@@ -1,7 +1,8 @@
-
 import re
+
+
 class KhachHang:
-    def __init__(self, ma_kh, ten_kh, sdt, email):
+    def __init__(self, ma_kh, ten_kh, sdt, email=""):
         self.ma_kh = ma_kh
         self.ten_kh = ten_kh
         self.sdt = sdt
@@ -45,17 +46,26 @@ class KhachHang:
 
         self.__sdt = sdt
 
-    # Kiem tra email bang Regex
+    # Kiem tra email bang Regex (cho phep rong "")
     @property
     def email(self):
         return self.__email
 
     @email.setter
     def email(self, email):
+        if email is None:
+            self.__email = ""
+            return
+
         if not isinstance(email, str):
             raise ValueError("Email khong hop le")
 
         email = email.strip()
+
+        # Cho phep bo trong email
+        if email == "":
+            self.__email = ""
+            return
 
         mau_email = r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}"
 
@@ -70,14 +80,21 @@ class KhachHang:
             "ma_kh": self.ma_kh,
             "ten_kh": self.ten_kh,
             "sdt": self.sdt,
-            "email": self.email
+            "email": self.email,
         }
 
-    def __str__(self):
-        return (
-            f"{self.ma_kh} - {self.ten_kh} - "
-            f"{self.sdt} - {self.email}"
+    # Khoi tao lai doi tuong tu Dictionary (khi doc file JSON)
+    @classmethod
+    def from_dict(cls, data):
+        return cls(
+            ma_kh=data.get("ma_kh", ""),
+            ten_kh=data.get("ten_kh", ""),
+            sdt=data.get("sdt", ""),
+            email=data.get("email", ""),
         )
+
+    def __str__(self):
+        return f"{self.ma_kh} - {self.ten_kh} - {self.sdt} - {self.email}"
 
     def __str__(self):
         return f"{self.ma_kh} - {self.ten_kh} - {self.sdt} - {self.email}"
