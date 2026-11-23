@@ -1,8 +1,14 @@
-
 [
-    {
-        "ten_dang_nhap": "admin",
-        "mat_khau": "123456",
-        "vai_tro": "Admin"
-    }
+  {
+    "ten_dang_nhap": "admin",
+    "ho_ten": "Quản trị viên",
+    "mat_khau": "admin123",
+    "vai_tro": "Admin"
+  },
+  {
+    "ten_dang_nhap": "letan01",
+    "ho_ten": "Nhân viên Lễ tân",
+    "mat_khau": "letan123",
+    "vai_tro": "Lễ tân"
+  }
 ]
