@@ -1,6 +1,5 @@
 import re
 
-
 class KhachHang:
     def __init__(self, ma_kh, ten_kh, sdt, email=""):
         self.ma_kh = ma_kh
