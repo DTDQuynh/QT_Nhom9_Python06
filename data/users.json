@@ -1,8 +1,17 @@
-
 [
     {
         "ten_dang_nhap": "admin",
         "mat_khau": "123456",
         "vai_tro": "Admin"
+    },
+    {
+        "ten_dang_nhap": "quanly01",
+        "mat_khau": "admin123",
+        "vai_tro": "Quản lý"
+    },
+    {
+        "ten_dang_nhap": "letan01",
+        "mat_khau": "letan123",
+        "vai_tro": "Lễ tân"
     }
 ]

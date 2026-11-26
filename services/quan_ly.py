@@ -41,6 +41,26 @@ class QuanLyDatBan:
                 return u
         return None
 
+    def tao_tai_khoan(self, ten_dang_nhap, mat_khau, vai_tro="Lễ tân"):
+        for u in self.ds_users:
+             if u.ten_dang_nhap == ten_dang_nhap.strip():
+                raise ValueError(f"Tên đăng nhập '{ten_dang_nhap}' đã tồn tại!")
+
+        nguoi_dung_moi = NguoiDung(ten_dang_nhap, mat_khau, vai_tro)
+        self.ds_users.append(nguoi_dung_moi)
+        self.luu_tat_ca_du_lieu()
+        return nguoi_dung_moi
+
+    def doi_mat_khau(self, ten_dang_nhap, mat_khau_cu, mat_khau_moi):
+        for u in self.ds_users:
+            if u.ten_dang_nhap == ten_dang_nhap:
+                if u.mat_khau != mat_khau_cu:
+                    raise ValueError("Mật khẩu hiện tại không chính xác!")
+                u.mat_khau = mat_khau_moi
+                self.luu_tat_ca_du_lieu()
+                return True
+        raise ValueError("Không tìm thấy tài khoản người dùng!")
+
     # 3. Quản lý bàn ăn và tìm kiếm
     def tim_ban_theo_ma(self, ma_ban):
         for b in self.ds_ban:
