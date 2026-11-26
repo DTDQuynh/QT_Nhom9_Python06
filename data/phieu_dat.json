@@ -1,0 +1,111 @@
+[
+  {
+    "ma_phieu": "PD01",
+    "khach_hang": {
+      "ma_kh": "KH01",
+      "ten_kh": "Nguyễn Minh Anh",
+      "sdt": "0901234567",
+      "email": "minhanh.nguyen@gmail.com"
+    },
+    "ban": {
+      "loai_ban": "BanThuong",
+      "ma_ban": "B01",
+      "so_ghe": 4,
+      "trang_thai": "Trong",
+      "don_gia_ban": 500000,
+      "tien_coc": 50000.0
+    },
+    "ngay_dat": "25/11/2026",
+    "gio_dat": "18:30",
+    "ds_mon_dat": [
+      {
+        "ma_mon": "M01",
+        "ten_mon": "Lẩu hải sản",
+        "so_luong": 1,
+        "don_gia": 250000,
+        "thanh_tien": 250000
+      },
+      {
+        "ma_mon": "M02",
+        "ten_mon": "Gỏi ngó sen tôm thịt",
+        "so_luong": 2,
+        "don_gia": 95000,
+        "thanh_tien": 190000
+      }
+    ],
+    "tien_coc": 50000.0
+  },
+  {
+    "ma_phieu": "PD02",
+    "khach_hang": {
+      "ma_kh": "KH02",
+      "ten_kh": "Trần Hoàng Nam",
+      "sdt": "0912345678",
+      "email": ""
+    },
+    "ban": {
+      "loai_ban": "BanVIP",
+      "ma_ban": "VIP01",
+      "so_ghe": 8,
+      "trang_thai": "Trong",
+      "don_gia_ban": 1500000,
+      "tien_coc": 500000.0,
+      "phu_phi": 200000
+    },
+    "ngay_dat": "26/11/2026",
+    "gio_dat": "19:00",
+    "ds_mon_dat": [
+      {
+        "ma_mon": "M03",
+        "ten_mon": "Bò lúc lắc khoai tây",
+        "so_luong": 2,
+        "don_gia": 160000,
+        "thanh_tien": 320000
+      }
+    ],
+    "tien_coc": 500000.0
+  },
+  {
+    "ma_phieu": "PD03",
+    "khach_hang": {
+      "ma_kh": "KH03",
+      "ten_kh": "Lê Thị Thu Hà",
+      "sdt": "0987654321",
+      "email": "thuha.le1999@yahoo.com"
+    },
+    "ban": {
+      "loai_ban": "BanThuong",
+      "ma_ban": "B03",
+      "so_ghe": 4,
+      "trang_thai": "Da dat",
+      "don_gia_ban": 500000,
+      "tien_coc": 50000.0
+    },
+    "ngay_dat": "27/11/2026",
+    "gio_dat": "12:00",
+    "ds_mon_dat": [],
+    "tien_coc": 50000.0
+  },
+  {
+    "ma_phieu": "PD04",
+    "khach_hang": {
+      "ma_kh": "KH04",
+      "ten_kh": "Phạm Quốc Bảo",
+      "sdt": "0356789123",
+      "email": ""
+    },
+    "ban": {
+      "loai_ban": "BanVIP",
+      "ma_ban": "VIP02",
+      "so_ghe": 10,
+      "trang_thai": "Da dat",
+      "don_gia_ban": 2000000,
+      "tien_coc": 700000.0,
+      "phu_phi": 300000
+    },
+    "ngay_dat": "28/11/2026",
+    "gio_dat": "20:00",
+    "ds_mon_dat": [],
+    "tien_coc": 700000.0
+  }
+]
